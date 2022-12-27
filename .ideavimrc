@@ -22,6 +22,7 @@ map <C-c> <Esc>
 
 """ Code keybindings
 map <leader>ca <Action>(CodeEditorViewGroup)
+map <leader>cd <Action>(ShowErrorDescription)
 map <leader>cf <Action>(ReformatCode)
 map <leader>cm <Action>(Move)
 map <leader>crn <Action>(RenameElement)
@@ -33,10 +34,12 @@ map <leader>fs <Action>(FindInPath)
 map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
 
 """ Git keybindings
-map <leader>ghr <Action>(Vcs.RollbackChangedLines)
+map <leader>ga <Action>(Annotate)
 map <leader>gl <Action>(Vcs.Show.Log)
 map <leader>gf <Action>(Vcs.UpdateProject)
+map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>gp <Action>(Vcs.Push)
+map <leader>gr <Action>(Vcs.RollbackChangedLines)
 map <leader>gs <Action>(CheckinProject)
 
 map <leader><Space> <Action>(GotoFile)
