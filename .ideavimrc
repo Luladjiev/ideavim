@@ -1,0 +1,53 @@
+let mapleader=" "
+
+set NERDTree
+set highlightedyank
+
+set clipboard+=unnamedplus
+set clipboard+=ideaput
+
+set showmode
+set scrolloff=5
+
+set incsearch
+
+set number
+set relativenumber
+
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+map <C-c> <Esc>
+
+""" Code keybindings
+map <leader>ca <Action>(CodeEditorViewGroup)
+map <leader>cf <Action>(ReformatCode)
+map <leader>cm <Action>(Move)
+map <leader>crn <Action>(RenameElement)
+
+""" File keybindings
+map <leader>fb :NERDTree<CR>
+map <leader>fr <Action>(RecentFiles)
+map <leader>fs <Action>(FindInPath)
+map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
+
+""" Git keybindings
+map <leader>ghr <Action>(Vcs.RollbackChangedLines)
+map <leader>gl <Action>(Vcs.Show.Log)
+map <leader>gf <Action>(Vcs.UpdateProject)
+map <leader>gp <Action>(Vcs.Push)
+map <leader>gs <Action>(CheckinProject)
+
+map <leader><Space> <Action>(GotoFile)
+
+map gd <Action>(GotoDeclaration)
+
+map ]e <Action>(GotoNextError)
+map [e <Action>(GotoPreviousError)
+
+map ]h <Action>(VcsShowNextChangeMarker)
+map [h <Action>(VcsShowPrevChangeMarker)
+
+imap <C-k> <Action>(ParameterInfo)
+map K <Action>(QuickJavaDoc)
