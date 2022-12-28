@@ -25,6 +25,12 @@ map <C-c> <Esc>
 map <TAB> :action PreviousTab<CR>
 map <s-TAB> :action NextTab<CR>
 
+""" Window keybindings
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
 """ Code keybindings
 map <leader>ca <Action>(CodeEditorViewGroup)
 map <leader>cd <Action>(ShowErrorDescription)
