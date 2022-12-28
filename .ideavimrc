@@ -1,9 +1,11 @@
 let mapleader=" "
 
+set commentary
+set multiple-cursors
 set NERDTree
 set highlightedyank
 
-set clipboard+=unnamedplus
+set clipboard+=unnamed
 set clipboard+=ideaput
 
 set showmode
@@ -20,12 +22,17 @@ set idearefactormode=keep
 
 map <C-c> <Esc>
 
+map <TAB> :action PreviousTab<CR>
+map <s-TAB> :action NextTab<CR>
+
 """ Code keybindings
 map <leader>ca <Action>(CodeEditorViewGroup)
 map <leader>cd <Action>(ShowErrorDescription)
 map <leader>cf <Action>(ReformatCode)
 map <leader>cm <Action>(Move)
 map <leader>crn <Action>(RenameElement)
+map <leader>crr <Action>(FindUsages)
+map <leader>cs <Action>(GotoSymbol)
 
 """ File keybindings
 map <leader>fb :NERDTree<CR>
@@ -33,7 +40,7 @@ map <leader>fr <Action>(RecentFiles)
 map <leader>fs <Action>(FindInPath)
 map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
 
-""" Git keybindings
+""" Git
 map <leader>ga <Action>(Annotate)
 map <leader>gl <Action>(Vcs.Show.Log)
 map <leader>gf <Action>(Vcs.UpdateProject)
@@ -44,6 +51,9 @@ map <leader>gs <Action>(CheckinProject)
 
 map <leader><Space> <Action>(GotoFile)
 
+""" Comment
+map cc <Action>(CommentByLineComment)
+
 map gd <Action>(GotoDeclaration)
 
 map ]e <Action>(GotoNextError)
@@ -52,5 +62,9 @@ map [e <Action>(GotoPreviousError)
 map ]h <Action>(VcsShowNextChangeMarker)
 map [h <Action>(VcsShowPrevChangeMarker)
 
-imap <C-k> <Action>(ParameterInfo)
 map K <Action>(QuickJavaDoc)
+
+map <C-z> <Action>(ToggleDistractionFreeMode)
+map <C-S-z> <Action>(ToggleZenMode)
+
+imap <C-k> <Action>(ParameterInfo)
