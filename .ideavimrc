@@ -52,6 +52,7 @@ map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
 map <leader>ga <Action>(Annotate)
 map <leader>gl <Action>(Vcs.Show.Log)
 map <leader>gf <Action>(Vcs.UpdateProject)
+map <leader>gg <Action>(Vcs.QuickListPopupAction)
 map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
@@ -64,8 +65,8 @@ map cc <Action>(CommentByLineComment)
 
 map gd <Action>(GotoDeclaration)
 
-map ]e <Action>(GotoNextError)
-map [e <Action>(GotoPreviousError)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
 
 map ]h <Action>(VcsShowNextChangeMarker)
 map [h <Action>(VcsShowPrevChangeMarker)
