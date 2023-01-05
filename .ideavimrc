@@ -54,13 +54,14 @@ map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
 
 """ Git
 map <leader>ga <Action>(Annotate)
+map <leader>gb <Action>(Git.Branches)
 map <leader>gl <Action>(Vcs.Show.Log)
 map <leader>gf <Action>(Vcs.UpdateProject)
 map <leader>gg <Action>(Vcs.QuickListPopupAction)
 map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
-map <leader>gs <Action>(CheckinProject)
+map <leader>gs <Action>(Git.Commit.Stage)
 
 map <leader><Space> <Action>(GotoFile)
 
@@ -72,12 +73,13 @@ map gd <Action>(GotoDeclaration)
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 
-map ]h <Action>(VcsShowNextChangeMarker)
-map [h <Action>(VcsShowPrevChangeMarker)
+map ]g <Action>(VcsShowNextChangeMarker)
+map [g <Action>(VcsShowPrevChangeMarker)
 
 map K <Action>(QuickJavaDoc)
+imap <C-k> <Action>(QuickJavaDoc)
 
 map <C-z> <Action>(ToggleDistractionFreeMode)
 map <C-S-z> <Action>(ToggleZenMode)
 
-imap <C-k> <Action>(ParameterInfo)
+imap <C-j> <Action>(ParameterInfo)
