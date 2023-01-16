@@ -63,6 +63,9 @@ map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
 map <leader>gs <Action>(Git.Commit.Stage)
 
+""" Project
+map <leader>p <Action>(ManageRecentProjects)
+
 map <leader><Space> <Action>(GotoFile)
 
 """ Comment
