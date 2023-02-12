@@ -49,6 +49,8 @@ map <leader>cs <Action>(GotoSymbol)
 
 """ File keybindings
 map <leader>fb :NERDTree<CR>
+map <leader>fh <Action>(LocalHistory.ShowHistory)
+map <leader>fH <Action>(LocalHistory.ShowSelectionHistory)
 map <leader>fr <Action>(RecentFiles)
 map <leader>fs <Action>(FindInPath)
 map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
@@ -60,6 +62,7 @@ map <leader>gl <Action>(Vcs.Show.Log)
 map <leader>gf <Action>(Vcs.UpdateProject)
 map <leader>gg <Action>(Vcs.QuickListPopupAction)
 map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>gH <Action>(Vcs.ShowHistoryForBlock)
 map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
 map <leader>gs <Action>(Git.Commit.Stage)
