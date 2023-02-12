@@ -5,6 +5,7 @@ set multiple-cursors
 set NERDTree
 set highlightedyank
 set which-key
+set sneak
 
 set clipboard+=unnamed
 set clipboard+=ideaput
@@ -40,6 +41,7 @@ map <leader>bo <Action>(CloseAllEditorsButActive)
 
 """ Code keybindings
 map <leader>ca <Action>(CodeEditorViewGroup)
+map <leader>cc <Action>(CommentByLineComment)
 map <leader>cd <Action>(ShowErrorDescription)
 map <leader>cf <Action>(ReformatCode)
 map <leader>cm <Action>(Move)
@@ -71,9 +73,6 @@ map <leader>gs <Action>(Git.Commit.Stage)
 map <leader>p <Action>(ManageRecentProjects)
 
 map <leader><Space> <Action>(GotoFile)
-
-""" Comment
-map cc <Action>(CommentByLineComment)
 
 map gd <Action>(GotoDeclaration)
 
