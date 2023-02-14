@@ -5,7 +5,7 @@ set multiple-cursors
 set NERDTree
 set highlightedyank
 set which-key
-set sneak
+set easymotion
 
 set clipboard+=unnamed
 set clipboard+=ideaput
@@ -72,7 +72,7 @@ map <leader>gs <Action>(Git.Commit.Stage)
 """ Project
 map <leader>p <Action>(ManageRecentProjects)
 
-map <leader><Space> <Action>(GotoFile)
+map <leader>, <Action>(GotoFile)
 
 map gd <Action>(GotoDeclaration)
 
