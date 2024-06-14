@@ -6,6 +6,7 @@ set NERDTree
 set highlightedyank
 set which-key
 set easymotion
+set surround
 
 set clipboard+=unnamed
 set clipboard+=ideaput
@@ -26,8 +27,8 @@ set ideajoin
 set ideastatusicon=gray
 set idearefactormode=keep
 
-map <TAB> :action NextTab<CR>
-map <s-TAB> :action PreviousTab<CR>
+map L :action NextTab<CR>
+map H :action PreviousTab<CR>
 
 """ Window keybindings
 nmap <C-h> <C-w>h
@@ -50,11 +51,12 @@ map <leader>crr <Action>(FindUsages)
 map <leader>cs <Action>(GotoSymbol)
 
 """ File keybindings
-map <leader>fb :NERDTree<CR>
+map <leader>fe :NERDTree<CR>
+map <leader>fg <Action>(FindInPath)
 map <leader>fh <Action>(LocalHistory.ShowHistory)
 map <leader>fH <Action>(LocalHistory.ShowSelectionHistory)
 map <leader>fr <Action>(RecentFiles)
-map <leader>fs <Action>(FindInPath)
+map <leader>ff <Action>(GotoFile)
 map <leader>fS <Action>(IdeaVim.ReloadVimRc.reload)
 
 """ Git
@@ -72,8 +74,6 @@ map <leader>gs <Action>(Git.Commit.Stage)
 """ Project
 map <leader>p <Action>(ManageRecentProjects)
 
-map <leader>, <Action>(GotoFile)
-
 map gd <Action>(GotoDeclaration)
 
 map ]d <Action>(GotoNextError)
@@ -89,3 +89,4 @@ map <C-z> <Action>(ToggleDistractionFreeMode)
 map <C-S-z> <Action>(ToggleZenMode)
 
 imap <C-j> <Action>(ParameterInfo)
+map <C-j> <Action>(ParameterInfo)
