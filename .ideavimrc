@@ -1,14 +1,13 @@
 let mapleader=" "
 
-Plug 'tpope/vim-commentary'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'preservim/nerdtree'
-Plug 'machakann/vim-highlightedyank'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'justinmk/vim-sneak'
-
+set commentary
+set multiple-cursors
+set NERDTree
+set highlightedyank
 set which-key
+set easymotion
+set surround
+set sneak
 
 set clipboard+=unnamed
 set clipboard+=ideaput
@@ -72,6 +71,7 @@ map <leader>gH <Action>(Vcs.ShowHistoryForBlock)
 map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
 map <leader>gs <Action>(Git.Commit.Stage)
+map <leader>gc <Action>(copilot.chat.show)
 
 """ Project
 map <leader>p <Action>(ManageRecentProjects)
@@ -91,17 +91,3 @@ map <C-z> <Action>(ToggleDistractionFreeMode)
 map <C-S-z> <Action>(ToggleZenMode)
 
 imap <C-j> <Action>(ParameterInfo)
-map <C-j> <Action>(ParameterInfo)
-
-" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
-nmap <C-n> <Plug>NextWholeOccurrence
-xmap <C-n> <Plug>NextWholeOccurrence
-nmap g<C-n> <Plug>NextOccurrence
-xmap g<C-n> <Plug>NextOccurrence
-xmap <C-x> <Plug>SkipOccurrence
-xmap <C-p> <Plug>RemoveOccurrence
-
-nmap <leader><C-n> <Plug>AllWholeOccurrences
-xmap <leader><C-n> <Plug>AllWholeOccurrences
-nmap <leader>g<C-n> <Plug>AllOccurrences
-xmap <leader>g<C-n> <Plug>AllOccurrences
