@@ -70,6 +70,7 @@ map <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>gH <Action>(Vcs.ShowHistoryForBlock)
 map <leader>gp <Action>(Vcs.Push)
 map <leader>gr <Action>(Vcs.RollbackChangedLines)
+map <leader>gR <Action>(ChangesView.Revert)
 map <leader>gs <Action>(Git.Commit.Stage)
 map <leader>gc <Action>(copilot.chat.show)
 
