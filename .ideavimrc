@@ -77,7 +77,7 @@ map <leader>gc <Action>(copilot.chat.show)
 """ Project
 map <leader>p <Action>(ManageRecentProjects)
 
-" Multiple cursors
+""" Multiple cursors
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
 nmap g<C-n> <Plug>NextOccurrence
